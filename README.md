@@ -8,12 +8,12 @@ You can change the 'spark' in the commandline above into the machine you are tar
 
 To start a build of the kernel, do:
 
-        $ source ~/.oe/environment-project-magpie
+	$ source ~/.oe/environment-project-magpie
 	$ bitbake virtual/kernel
 
 To start a build of the image, do:
         
-        $ source ~/.oe/environment-project-magpie
+	$ source ~/.oe/environment-project-magpie
 	$ bitbake core-image-base 
 
 To update the metadata, do:
