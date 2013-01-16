@@ -2,6 +2,7 @@
 
 # Original script done by Don Darling
 # Later changes by Koen Kooi and Brijesh Singh
+# Modified by Christian Ege
 
 # Revision history:
 # 20090902: download from twiki
@@ -16,7 +17,7 @@
 # 20091202: Fix proxy setup
 #
 # For further changes consult 'git log' or browse to:
-#   http://git.angstrom-distribution.org/cgi-bin/cgit.cgi/setup-scripts/
+#  https://github.com/project-magpie/setup-scripts 
 # to see the latest revision history
 
 # Use this till we get a maintenance branch based of the release tag
@@ -69,7 +70,7 @@ DL_DIR = "${OE_SOURCE_DIR}/downloads"
 SSTATE_DIR = "${OE_BUILD_DIR}/build/sstate-cache"
 
 # Which files do we want to parse:
-BBFILES ?= "${OE_SOURCE_DIR}/openembedded-core/meta/recipes-*/*/*.bb"
+BBFILES ?= "${OE_SOURCE_DIR}/poky/meta/recipes-*/*/*.bb"
 
 TMPDIR = "${OE_BUILD_TMPDIR}"
 
@@ -188,7 +189,7 @@ else
     #--------------------------------------------------------------------------
     # Set up the bitbake path to find the OpenEmbedded recipes.
     #--------------------------------------------------------------------------
-    export BBPATH=${OE_BUILD_DIR}:${OE_SOURCE_DIR}/openembedded-core/meta${BBPATH_EXTRA}
+    export BBPATH=${OE_BUILD_DIR}:${OE_SOURCE_DIR}/poky/meta${BBPATH_EXTRA}
 
     echo "export BBPATH=\"${BBPATH}\"" >> ${OE_ENV_FILE}
 
@@ -281,7 +282,7 @@ function update_oe()
         config_git_proxy
     fi
 
-    #manage meta-openembedded and meta-angstrom with layerman
+    #manage poky and meta-magpie with layerman
     env gawk -v command=update -f ${OE_BASE}/scripts/layers.awk ${OE_LAYERS_TXT}
 }
 
