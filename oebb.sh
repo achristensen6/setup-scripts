@@ -35,7 +35,7 @@ PROXYHOST=""
 OE_BASE=${PWD}
 # incremement this to force recreation of config files
 BASE_VERSION=6
-OE_ENV_FILE=~/.oe/environment-angstromv2012.05
+OE_ENV_FILE=~/.oe/environment-project-magpie
 
 if ! git help log | grep -q no-abbrev ; then 
 	echo "Your installed version of git is too old, it lacks --no-abbrev. Please install 1.7.6 or newer"
@@ -153,7 +153,7 @@ else
     #--------------------------------------------------------------------------
     # Include up-to-date bitbake in our PATH.
     #--------------------------------------------------------------------------
-    export PATH=${OE_SOURCE_DIR}/openembedded-core/scripts:${OE_SOURCE_DIR}/bitbake/bin:${PATH}
+    export PATH=${OE_SOURCE_DIR}/poky/scripts:${OE_SOURCE_DIR}/poky/bitbake/bin:${PATH}
 
     echo "export PATH=\"${PATH}\"" >> ${OE_ENV_FILE}
 
