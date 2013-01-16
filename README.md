@@ -4,11 +4,11 @@ To configure the scripts and download the build metadata, do:
 
 	$ MACHINE=spark ./oebb.sh config spark
 
-You can change the 'beagleboard' in the commandline above into the machine you are targeting.
+You can change the 'spark' in the commandline above into the machine you are targeting.
 
 To start a build of the kernel, do:
-
-	$ MACHINE=spark ./oebb.sh bitbake virtual/kernel
+        $ source ~/.oe/environment-project-magpie
+	$ bitbake virtual/kernel
 
 
 To update the metadata, do:
