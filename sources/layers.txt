@@ -1,4 +1,3 @@
-meta-openembedded,git://github.com/openembedded/meta-oe.git,denzil,HEAD
 poky,git://git.yoctoproject.org/poky,denzil,HEAD
-meta-stlinux,git://github.com/project-magpie/meta-stlinux.git,master,HEAD
-meta-magpie,git://github.com/project-magpie/meta-magpie.git,master,HEAD
+meta-stlinux,git@github.com:project-magpie/meta-stlinux.git,master,HEAD
+meta-magpie,git@github.com:project-magpie/meta-magpie.git,master,HEAD
