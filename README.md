@@ -53,8 +53,8 @@ Attention these are symbolic links to the latest image and have to be renamed.
 - Turn on the box by the power switch.
 - Wait until you read "Forc" on the display
 - Release the **OK** Button. Now you can press the Button **V+** -> (right).
-- After this you can read __U LD__ on the display.
-- The flashing of the image may take some minutes. After successfull flashing "SUCC" is written on the display and the box reboots.
+- After this you can read *"U LD"* on the display.
+- The flashing of the image may take some minutes. After successfull flashing *"SUCC"* is written on the display and the box reboots.
 
 ---------------------------------------
 If you find any bugs please report them here: https://github.com/project-magpie/setup-scripts/issues 
