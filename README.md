@@ -37,7 +37,7 @@ The images to be flashed are located in the following folder:
 - build/tmp-magpie/deploy/images/vulture-image-spark.jffs2
 - build/tmp-magpie/deploy/images/uImage-spark.bin
 
-Attention these are symbolic links to the latest image and have to be renamed.
+Attention these are symbolic links to the latest image.
 
 > vulture-image-spark.jffs2 -> e2jffs2.img
 > 
@@ -46,7 +46,7 @@ Attention these are symbolic links to the latest image and have to be renamed.
 
 - Format USB-thumb drive with a single FAT32 partition
 - Create an enigma2 folder on the USB-thumb drive
-- Copy the files e2jffs2.img and uImage to the enigma2 folder onto the thumb drive
+- Copy the file _vulture-image-spark.jffs2_ to the **_enigma2_** folder and rename it to **e2jffs2.img** and copy the file _uImage-spark.bin_ to the **_enigma2_** folder as-well and rename it to **uImage** to the enigma2 folder onto the thumb drive
 - Turn the Set-Top-Box off by the power switch
 - Put the USB-Stick into the USB-Slot at the back of the STB. Not the front one!
 - Press the **OK** at the Front-Panel and keep it pressed.
