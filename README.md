@@ -31,6 +31,8 @@ The oebb.sh script tries hard to keep your local changes while at the same time 
 Flashing the JFFS2 Image (spark)
 ================================
 
+**ATTENTION THIS CAN BRICK YOUR HARDWARE!!! USE THIS AT YOUR OWN RISK**
+
 The images to be flashed are located in the following folder:
 - build/tmp-magpie/deploy/images/vulture-image-spark.jffs2
 - build/tmp-magpie/deploy/images/uImage-spark.bin
@@ -38,6 +40,7 @@ The images to be flashed are located in the following folder:
 Attention these are symbolic links to the latest image and have to be renamed.
 
 > vulture-image-spark.jffs2 -> e2jffs2.img
+> 
 > uImage-spark.bin -> uImage-spark.bin
 
 
@@ -53,5 +56,5 @@ Attention these are symbolic links to the latest image and have to be renamed.
 - After this you can read __U LD__ on the display.
 - The flashing of the image may take some minutes. After successfull flashing "SUCC" is written on the display and the box reboots.
 
-
+---------------------------------------
 If you find any bugs please report them here: https://github.com/project-magpie/setup-scripts/issues 
