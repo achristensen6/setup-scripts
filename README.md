@@ -39,10 +39,17 @@ The images to be flashed are located in the following folder:
 
 Attention these are symbolic links to the latest image.
 
-    > vulture-image-spark.jffs2 -> e2jffs2.img
-    > 
-    > uImage-spark.bin -> uImage.bin
+Sti7111 based Boxes
+-------------------
 
+     $ cp build/tmp-magpie/deploy/images/vulture-image-spark.jffs2 /media/spark/enigma2/e2jffs2.img
+     $ cp build/tmp-magpie/deploy/images/uImage-spark.bin /media/spark/enigma2/uImage
+
+Sti7162 based Boxes
+-------------------
+
+     $ cp build/tmp-magpie/deploy/images/vulture-image-spark7162.jffs2 /media/spark/enigma2/e2jffs2.img
+     $ cp build/tmp-magpie/deploy/images/uImage-spark7162.bin /media/spark/enigma2/uImage     
 
 - Format USB-thumb drive with a single FAT32 partition
 - Create an enigma2 folder on the USB-thumb drive
