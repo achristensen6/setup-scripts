@@ -39,9 +39,9 @@ The images to be flashed are located in the following folder:
 
 Attention these are symbolic links to the latest image.
 
-> vulture-image-spark.jffs2 -> e2jffs2.img
-> 
-> uImage-spark.bin -> uImage-spark.bin
+    > vulture-image-spark.jffs2 -> e2jffs2.img
+    > 
+    > uImage-spark.bin -> uImage.bin
 
 
 - Format USB-thumb drive with a single FAT32 partition
