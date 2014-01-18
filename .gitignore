@@ -12,3 +12,5 @@ package-depends.dot
 pn-depends.dot
 task-depends.dot
 tags
+*.lock
+cache/*
