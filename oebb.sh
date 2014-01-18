@@ -17,7 +17,7 @@
 # 20091202: Fix proxy setup
 #
 # For further changes consult 'git log' or browse to:
-#  https://github.com/project-magpie/setup-scripts 
+#  https://github.com/project-magpie/setup-scripts
 # to see the latest revision history
 
 # Use this till we get a maintenance branch based of the release tag
@@ -38,7 +38,7 @@ OE_BASE=${PWD}
 BASE_VERSION=6
 OE_ENV_FILE=~/.oe/environment-project-magpie
 
-if ! git help log | grep -q no-abbrev ; then 
+if ! git help log | grep -q no-abbrev ; then
 	echo "Your installed version of git is too old, it lacks --no-abbrev. Please install 1.7.6 or newer"
 	exit 1
 fi
@@ -412,7 +412,7 @@ then
         tag_layers $TAG
         exit 0
     fi
-    
+
     if [ $1 = "changelog" ]
     then
         if [ -z $2 ] ; then
@@ -424,7 +424,7 @@ then
         changelog
         exit 0
     fi
-    
+
     if [ $1 = "checkout" ]
     then
         if [ -z $2 ] ; then
@@ -477,9 +477,7 @@ echo "You must invoke \"$0 config <machine>\" and then \"$0 update\" prior"
 echo "to your first bitbake command"
 echo ""
 echo "The <machine> argument can be one of the following"
-echo "       beagleboard:   BeagleBoard"
-echo "       qemuarm        Emulated ARM machine"
-echo "       qemumips:      Emulated MIPS machine"
-echo "       fri2-noemgd:   Intel FRI2 machine without graphics"
+echo "       spark:         spark7111 based boards"
+echo "       spark7162:     spark7162 based boards"
 echo ""
 echo "Other machines are valid as well, but listing those would make this message way too long"
