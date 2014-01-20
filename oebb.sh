@@ -282,7 +282,7 @@ function update_oe()
         config_git_proxy
     fi
 
-    #manage poky and meta-magpie with layerman
+    #manage poky and meta-neutrino with layerman
     env gawk -v command=update -f ${OE_BASE}/scripts/layers.awk ${OE_LAYERS_TXT}
 }
 
