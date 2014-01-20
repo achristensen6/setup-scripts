@@ -1,5 +1,8 @@
-include recipes-images/images/neutrino-image-base.inc
+#
+# This is based on the neutrino image with some extra sugar
+#
 
+include recipes-images/images/neutrino-image-base.inc
 
 
 IMAGE_INSTALL += " \
