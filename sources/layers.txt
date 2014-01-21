@@ -1,3 +1,4 @@
 poky,git://git.yoctoproject.org/poky,dora,HEAD
 meta-stlinux,git@github.com:project-magpie/meta-stlinux.git,spark-multiarch-test,HEAD
-meta-neutrino,git@github.com:project-magpie/meta-neutrino.git,master,HEAD
+meta-neutrino-mp,git@github.com:project-magpie/meta-neutrino-mp.git,master,HEAD
+meta-magpie,git@github.com:project-magpie/meta-magpie.git,dora-next,HEAD
