@@ -2,3 +2,5 @@ poky,git://git.yoctoproject.org/poky,dora,HEAD
 meta-stlinux,git@github.com:project-magpie/meta-stlinux.git,spark-multiarch-test,HEAD
 meta-neutrino-mp,git@github.com:project-magpie/meta-neutrino-mp.git,master,HEAD
 meta-magpie,git@github.com:project-magpie/meta-magpie.git,dora-next,HEAD
+meta-oe,git@github.com:openembedded/meta-oe.git,dora,HEAD
+meta-openpli,git@github.com:project-magpie/meta-openpli.git,dora-magpie,HEAD
